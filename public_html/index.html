@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js" type="text/javascript"></script>
+        <title>Travel Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="topnav">
+                <div class="navbar-brand">
+                <img class="logo" src="images/world-1.png" alt="logo">
+                </div>
+                <a class="active" href="#">Tour</a>
+                <a href="#">Product</a>
+                <a href="#">Features</a>
+                <a href="#">Enterprise</a>
+                <a href="#">Support</a>
+                <a href="#">Pricing</a>
+                <a href="#">Cart</a>
+            </div>
+        </header>
+        <div class="main-heading">
+            <h3>Travelling Trip</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <button class="btn btn-secondary">Coming soon</button>
+        </div>
+        <div class="card">
+            <div class="container">
+                <form class="form-card">
+                    <div class="row">
+                        <div class="col-50">
+                             <label for="fname" class="form-field">First Name</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="fname" name="firstname" placeholder="first Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                             <label for="lname" class="form-field">Last Name</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                             <label for="email" class="form-field">Email Address</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="email" name="email" placeholder="Enter Email">
+                            <p class="imp-text">We'll never share your email with anyone else. <b>(privacy Policy)</b></p>
+                        </div>
+                    </div>
+                     <div class="row" id="contact">
+                        <div class="col-50">
+                             <label for="phone" class="form-field">Contact Number</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="phone" name="phone" placeholder="phone">
+                        </div>
+                    </div>
+                    <div class="row" id="gender">
+                        <input type="radio" id="male" name="gender" value="male">
+                            <label for="male" class="radio-field">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                            <label for="male" class="radio-field">Female</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="birth-date" class="form-field">Birthdate</label>
+                        </div>
+                        <div class="col">
+                            <input type="date" id="birth-date" name="birthday">
+                        </div>
+                        <div class="col-50" id="coupon">
+                            <label for="coupon-code" class="form-field">Coupon Code</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="coupon-code" name="code" placeholder="Apply coupon code here...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div> 
+                </form>
+            </div>
+        </div>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content custom">
+                    <div class="modal-header">
+                        <h2 class="modal-title">More Deals For You!
+                            <br><small class="heading">More Discount for your flight</small></h2>
+                         <button type="button"
+                                class="close"
+                                data-dismiss="modal"> 
+                          × 
+                      </button>    
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="modal-card">
+                                    <h3><small>Flat</small><br>Rs.500<b>off</b></h3>
+                                    <h5 class="modal-head">MMTFLAT500</h5>
+                                    <p class="card-para">Valid on Min 3 tickets Booking</p>
+                                    <button class="btn btn-primary" id="button1">Copy Code</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="modal-card">
+                                    <h3><small>Flat</small><br>Rs.500<b>off</b></h3>
+                                    <h5 class="modal-head1">FLYMMT300</h5>
+                                    <p class="card-para">Valid on Min 3 tickets Booking</p>
+                                    <button class="btn btn-primary" id="button2">Copy Code</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="modal-card">
+                                    <h3><small>Flat</small><br>Rs.500<b>off</b></h3>
+                                    <h5 class="modal-head2">FLYMMT150</h5>
+                                    <p class="card-para">Valid on Min 3 tickets Booking</p>
+                                    <button class="btn btn-primary" id="button3">Copy Code</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="modal-card">
+                                    <h3><small>Flat</small><br>Rs.500<b>off</b></h3>
+                                    <h5 class="modal-head3">MMTBEST</h5>
+                                     <p class="card-para">Valid on Min 3 tickets Booking</p>
+                                    <button class="btn btn-primary" id="button4">Copy Code</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
